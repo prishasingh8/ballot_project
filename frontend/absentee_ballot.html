@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BallotBuddy</title>
+    <link rel="stylesheet" href="cards.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="palette-2-design-variation">
+        <!-- Navigation -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-text">BALLOT</span>
+                <span class="logo-text">BUDDY</span>
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="get_involved.html">Get Involved</a>
+            </nav>
+            <a href="#" class="link">www.ballotbuddy.com</a>
+        </header>
+
+        <div class="main_title_header"><span>Request an Absentee Ballot</span></div>
+
+        <div class="description-container">
+            <div class="description">In the case you can’t make it to your local polling center -
+                vote from wherever you are.
+            </div>
+        </div>
+
+        <form action="/url" method="GET">
+            <p class="form-descriptions">Name</p>
+            <div class="input-container">
+                <input type="text" name="first_name" placeholder="First Name*" required>
+                <input type="text" name="last_name" placeholder="Last Name*" required>
+                <input type="text" name="middle_name" placeholder="Middle Name">
+            </div>
+            <p class="form-descriptions">Date of Birth</p>
+            <div class="input-container">
+                <input type="text" name="month" placeholder="Month" required>
+                <input type="text" name="day" placeholder="Day" required>
+                <input type="text" name="year" placeholder="Year" required>
+            </div>
+
+            <p class="form-descriptions">Old Address</p>
+            <div class="input-container">
+                <div class="row">
+                    <input type="text" name="old_address_1" placeholder="Address 1" required>
+                    <input type="text" name="old_address_2" placeholder="Address 2: Apt, Suite, Building, Floor, etc.">
+                    <input type="text" name="old_city_town" placeholder="City/Town" required>
+                </div>
+                <div class="row">
+                    <input type="text" name="old_zip_code" placeholder="Zip Code" required>
+                    <input type="text" name="old_county" placeholder="County" required>
+                    <input type="text" name="old_state" placeholder="State" required>
+                </div>
+            </div>
+
+            <p class="form-descriptions">New Address</p>
+            <div class="input-container">
+                <div class="row">
+                    <input type="text" name="new_address_1" placeholder="Address 1" required>
+                    <input type="text" name="new_address_2" placeholder="Address 2: Apt, Suite, Building, Floor, etc.">
+                    <input type="text" name="new_city_town" placeholder="City/Town" required>
+                </div>
+                <div class="row">
+                    <input type="text" name="new_zip_code" placeholder="Zip Code" required>
+                    <input type="text" name="new_county" placeholder="County" required>
+                    <input type="text" name="new_state" placeholder="State" required>
+                </div>
+            </div>
+            <div class="submit-button-container">
+                <input class="submit_button" type="submit" value="Submit">
+            </div>
+        </form>
+
+    </div>
+    <!-- Footer -->
+    <div class="navigation-footer">
+        <div class="divider"></div>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Ballot Buddy. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
