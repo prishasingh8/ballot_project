@@ -88,6 +88,16 @@
     text-decoration: none;
     font-weight: 500;
   }
+
+  .flex-container {
+    display: flex;
+  }
+  
+  .flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
   
   .candidate-profiles {
     position: relative;
