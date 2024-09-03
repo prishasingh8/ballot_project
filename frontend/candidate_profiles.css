@@ -135,8 +135,9 @@
 
   .flex-wrapper {
     display: flex;
-    margin-left: 200px;
+    margin-left: 150px;
     justify-content: flex-end;
+    width: 100%;
   }
 
   .big-box {
