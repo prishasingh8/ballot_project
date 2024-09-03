@@ -28,7 +28,7 @@
   /* Header */
   .header {
     width: 100%;
-    height: 164px;
+    height: 110px;
     padding: 0 50px;
     background: #01395E;
     display: flex;
@@ -47,6 +47,8 @@
     color: #D1E6F7;
     text-decoration: none;
     font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   
   .logo-text {
@@ -133,15 +135,27 @@
     margin-left: 80px;
   }
 
+  /* the candidate that is being shown */
+  .selected-box {
+    width: 400px;
+    height: 200px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 50px;
+    background-color: #01233F;
+    margin-left: 80px;
+  }
+
   .flex-wrapper {
     display: flex;
-    margin-left: 150px;
+    margin-left: 120px;
+    margin-bottom: 100px;
     justify-content: flex-end;
     width: 100%;
   }
 
   .big-box {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 1000px;
     height: 800px;
     border-radius: 70px 0 0 70px;
@@ -167,7 +181,7 @@
     font-size: 40px;
     color: #D1E6F7;
     margin-left: 80px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   
   /* Footer */
