@@ -11,3 +11,5 @@ const reportWebVitals = onPerfEntry => {
 };
 
 export default reportWebVitals;
+
+// this page is mainly for tracking the websites performance metrics in the future
