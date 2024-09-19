@@ -2,7 +2,7 @@
 import React from 'react';
 import './Home.css'; // Assuming styles will be in App.css
 
-function App() {
+function Home() {
   return (
     <div className="palette-2-design-variation">
       {/* Header */}
@@ -95,4 +95,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

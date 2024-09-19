@@ -1,0 +1,235 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+body {
+    background: linear-gradient(to bottom, #01395E 0%, #D7CDC1 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 110px;
+    padding: 0 50px;
+    background: #01395E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    /* relative vs. fixed header */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    color: #D1E6F7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-text {
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+    padding-left: 120px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #D1E6F7;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #D1E6F7;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.link {
+    font-size: 20px;
+    color: #D1E6F7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/*About us and the subtitle */
+
+.about-us-container {
+    margin-top: 40px;
+}
+
+.container {
+    margin: 0 69px 165px 94px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.about-us {
+    margin: 0 96px 17px 96px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: var(--title-font-family, 'Inter');
+    font-weight: var(--title-font-weight, 700);
+    font-size: var(--title-font-size, 64px);
+    letter-spacing: var(--title-letter-spacing, -1.3px);
+    color: #D1E6F7;
+}
+
+.the-ballot-buddy-team-what-we-stand-for {
+    margin-bottom: 75.5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: var(--subheading-font-family, 'Inter');
+    font-weight: var(--subheading-font-weight, 400);
+    font-size: var(--subheading-font-size, 24px);
+    line-height: var(--subheading-line-height, 1.5);
+    color: #D1E6F7;
+}
+
+.paragraph-container {
+    width: 60%;
+    text-align: left;
+}
+
+.paragraph {
+    margin: 0 20.5px 79px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: var(--body-text-font-family, 'Inter');
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    margin-top: 10px;
+    color: #D1E6F7;
+}
+
+
+.placeholder-image {
+     margin-top: 10px;
+     margin-left: 10px;
+
+ }
+
+/*Input boxes code*/
+.input-box-container {
+    width: 30%;
+    row-gap: 40px;
+}
+
+.last-name {
+    display: flex;
+    height: 50px;
+    padding: 12px 16px;
+    align-items: flex-start;
+    gap: var(--Spacing-XS, 8px);
+    flex-shrink: 0;
+    border-radius: var(--Spacing-XS, 8px);
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+
+    /* Button Shadow */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.first-name {
+    display: flex;
+    height: 50px;
+    padding: 12px 16px;
+    align-items: flex-start;
+    gap: var(--Spacing-XS, 8px);
+    flex-shrink: 0;
+    border-radius: var(--Spacing-XS, 8px);
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+
+    /* Button Shadow */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+
+/* Footer */
+ .navigation-footer {
+     width: 100%;
+     padding: 20px 50px;
+     background: #01395E;
+     box-sizing: border-box;
+     margin-top: auto;
+     /* Push footer to the bottom */
+ }
+
+ .divider {
+     border-top: 1px solid #D1E6F7;
+     margin-bottom: 20px;
+ }
+
+ .footer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     box-sizing: border-box;
+ }
+
+ .footer-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     color: #D1E6F7;
+     font-size: 14px;
+ }
+
+ .footer-links {
+     display: flex;
+     gap: 20px;
+ }
+
+ .footer-links a {
+     color: #D1E6F7;
+     font-size: 14px;
+     text-decoration: none;
+ }
