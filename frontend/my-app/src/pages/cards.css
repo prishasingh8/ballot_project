@@ -1,0 +1,334 @@
+/* CSS for all of the card navigations from home page */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+body {
+    background: linear-gradient(to bottom, #01395E 0%, #D7CDC1 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 110px;
+    padding: 0 50px;
+    background: #01395E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    /* relative vs. fixed header */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    color: #D1E6F7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-text {
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+    padding-left: 120px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #D1E6F7;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #D1E6F7;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.link {
+    font-size: 20px;
+    color: #D1E6F7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Body */
+.main_title_header {
+    /* specific for wider titles */
+    position: relative;
+    width: 1000px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #DDDDDD;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.title_header {
+    position: relative;
+    width: 800px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #DDDDDD;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.description-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.description {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 10px;
+    color: #D1E6F7;
+}
+
+.description-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+form {
+    padding-bottom: 90px;
+}
+
+.form-descriptions {
+    color: #D1E6F7;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 150%;
+    margin-left: 200px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1100px;
+    gap: 30px;
+}
+
+input {
+    color: #D1E6F7;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+    padding-left: 20px;
+    font-family: Inter;
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.submit_button {
+    border-radius: 8px;
+    background: linear-gradient(270deg, #01395E, #4A8CB0);
+    margin: 0 auto;
+    width: 100px;
+}
+
+/* Voting Eligibility Page */
+.quiz-container {
+    margin-bottom: 70px;
+}
+
+.question-box {
+    margin: 0 auto;
+    display: flex;
+    width: 1100px;
+    height: 150px;
+    margin-top: 25px;
+    padding: var(--Spacing-SM, 32px);
+    flex-direction: column;
+    gap: var(--Spacing-M, 20px);
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: -4px 8px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.yes-button {
+    font-family: Inter;
+    display: flex;
+    width: 70px;
+    height: 50px;
+    padding: 4px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #000;
+    color: #fff;
+}
+
+.no-button {
+    font-family: Inter;
+    display: flex;
+    width: 70px;
+    height: 50px;
+    padding: 4px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #000;
+    gap: 10px;
+    color: #fff;
+}
+
+/* Report an Issue Page */
+.message_box {
+    color: #D1E6F7;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 15px;
+    vertical-align: top;
+    resize: none;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+/* Footer */
+.navigation-footer {
+    width: 100%;
+    padding: 20px 50px;
+    background: #01395E;
+    box-sizing: border-box;
+    margin-top: auto;
+    /* Push footer to the bottom */
+}
+
+.divider {
+    border-top: 1px solid #D1E6F7;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #D1E6F7;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #D1E6F7;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .navbar {
+        gap: 20px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .heading-container {
+        width: 100%;
+    }
+}
