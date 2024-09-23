@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import './Home.css'; // Assuming styles will be in App.css
+import './Home.css';
 
 function Home() {
   return (
@@ -17,6 +17,7 @@ function Home() {
           <a href="/get_involved">Get Involved</a>
         </nav>
         <a href="/candidate_profiles" className="link">www.ballotbuddy.com</a>
+        <link rel="icon" href="%PUBLIC_URL%/bb_icon.ico" />
       </header>
 
       {/* Main Content */}
@@ -42,7 +43,6 @@ function Home() {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="divider"></div>
 
         {/* Headings */}

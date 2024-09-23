@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutUs.css'; // Make sure this points to your CSS file
+import './AboutUs.css'; 
 
 function AboutUs() {
   return (
@@ -31,7 +31,6 @@ function AboutUs() {
             <div className="paragraph-container">
               <div className="paragraph">
                 Ballot Buddy is a platform that stems from the idea that all those that are able and willing to have a voice should be able to do so without inconvenience...
-                {/* Content continues as in your original code */}
               </div>
             </div>
             
