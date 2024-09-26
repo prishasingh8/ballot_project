@@ -17,11 +17,8 @@ function App() {
         {/* Define routes here */}
         <Route path="/" element={<Home />} />
         <Route path="/about_us" element={<AboutUs />} />
-<<<<<<< HEAD
         <Route path="/get_involved" element={<GetInvolved />} />
-=======
         <Route path="/voting_eligibility" element={<VotingEligibility />} />
->>>>>>> 6b667b210d8897c8d2c00ca1c23fc136f00aa93a
         {/* Add more routes for other pages */}
       </Routes>
     </Router>
