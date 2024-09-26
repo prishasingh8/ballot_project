@@ -172,6 +172,7 @@ text-shadow:
   border: none;
   outline: none;
   margin-left: 50px;
+  margin-top: 20px;
   flex-grow: 1; /* Allow input to grow */
 }
 
