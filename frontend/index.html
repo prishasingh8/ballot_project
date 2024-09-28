@@ -8,9 +8,22 @@
     <title>BaullotBuddy</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Load Google Maps JavaScript API with Places library -->
+    <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJkTs0t-NeKUJlCRPDyMpLoTmflXIclE8&libraries=places&callback=initialize">
+    </script> 
+
+    <script type="text/javascript" src="/Backend/script.js"></script>
 </head>
 
+
+
 <body>
+    
+    
     <div class="palette-2-design-variation">
         <!-- Navigation -->
         <header class="header">
@@ -35,8 +48,10 @@
                     <div class="description">Type in your Address and see your Smart Ballot</div>
                     <div class="input-field-wrapper">
                         <div class="input-field-container">
-                            <input name="search_input" id="search_input" type="text" class="input-field" placeholder="Address" autocomplete="on">
-                            
+                            <input name="search_input" type="text" id="search_input"  placeholder="Enter an address" autocomplete="off">
+                            <div id="autocomplete-results"></div>
+                            <input name="search_input" id="search_input" type="text" class="input-field" placeholder="Address">
+                            <div id="autocomplete-results"></div>
                             <button class="search-button">Search</button>
                         </div>
                     </div>
