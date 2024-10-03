@@ -7,15 +7,15 @@ function AboutUs() {
       {/* Header */}
       <header className="header">
         <div className="logo">
+          <span className="logo-text">BETTER</span>
           <span className="logo-text">BALLOT</span>
-          <span className="logo-text">BUDDY</span>
         </div>
         <nav className="navbar">
           <a href="/">Home</a>
           <a href="/about_us">About Us</a>
           <a href="/get_involved">Get Involved</a>
         </nav>
-        <a href="#" className="link">www.ballotbuddy.com</a>
+        <a href="#" className="link">www.betterballot.com</a>
       </header>
 
       {/* About Us Section */}
@@ -26,11 +26,11 @@ function AboutUs() {
         <div className="container">
           <div className="container-1">
             <div className="the-ballot-buddy-team-what-we-stand-for">
-              The Ballot Buddy Team + What We Stand For
+              The Better Ballot Team + What We Stand For
             </div>
             <div className="paragraph-container">
               <div className="paragraph">
-                Ballot Buddy is a platform that stems from the idea that all those that are able and willing to have a voice should be able to do so without inconvenience...
+                Better Ballot is a platform that stems from the idea that all those that are able and willing to have a voice should be able to do so without inconvenience...
               </div>
             </div>
             
@@ -65,7 +65,7 @@ function AboutUs() {
         <div className="divider"></div>
         <footer className="footer">
           <div className="footer-content">
-            <p>&copy; 2024 Ballot Buddy. All rights reserved.</p>
+            <p>&copy; 2024 Better Ballot. All rights reserved.</p>
             <ul className="footer-links">
               <li><a href="/">Home</a></li>
               <li><a href="/about_us">About Us</a></li>
