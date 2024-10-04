@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import GetInvolved from './pages/GetInvolved';
 import VotingEligibility from './pages/VotingEligibility';
+import RegisterToVote from './pages/RegisterToVote';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/get_involved" element={<GetInvolved />} />
         <Route path="/voting_eligibility" element={<VotingEligibility />} />
+        <Route path="/register_to_vote" element={<RegisterToVote />} />
         {/* Add more routes for other pages */}
       </Routes>
     </Router>
